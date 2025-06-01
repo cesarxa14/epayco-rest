@@ -1,0 +1,5 @@
+mejorar los dtos de la api rest
+
+ver si puedo hacer que el token de la transacción expire
+
+revisar el orm doctrine. 
