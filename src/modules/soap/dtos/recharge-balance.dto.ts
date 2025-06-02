@@ -2,15 +2,15 @@
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class RechargeWalletDto {
-  @IsNotEmpty()
+  @IsNotEmpty({ message: 'Document is required' })
   @IsString()
   document: string;
 
-  @IsNotEmpty()
+  @IsNotEmpty({ message: 'Phone is required' })
   @IsString()
   phone: string;
 
-  @IsNotEmpty()
+  @IsNotEmpty({ message: 'Value is required' })
   @IsNumber()
   value: number;
 }
